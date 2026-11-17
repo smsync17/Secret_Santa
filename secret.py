@@ -16,17 +16,18 @@ def santa(a, b):
         print(f"{b[x]} is buying for {a[x]}")
 
 
-array = ["Aris", "Ikenna", "Julliene", "Samrawi", "Philip", "Rey"]
+array = []
+total = input("How many people will participate in the Secret Santa? ")
+for x in range(int(total)):
+    participant = input("Who will participate in the Secret Santa? ")
+    array.append(participant)
+
+# array = ["Aris", "Ikenna", "Julliene", "Samrawi", "Philip", "Rey"]
 fordapeople = array.copy()
-# print(array)
+
 sattolo(array)
-# print(f"que {array}")
-# print(f"si {fordapeople}")
 
 santa(array, fordapeople)
 
 # fordapeople.append("Radek")
 
-
-# print(fordapeople)
-# print(array)
