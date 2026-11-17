@@ -17,9 +17,9 @@ def santa(a, b):
 
 
 array = ["Aris", "Ikenna", "Julliene", "Samrawi", "Philip", "Rey"]
-fordapeople = ["Aris", "Ikenna", "Julliene", "Samrawi", "Philip", "Rey"]
+fordapeople = array.copy()
 # print(array)
-sattolo(fordapeople)
+sattolo(array)
 # print(f"que {array}")
 # print(f"si {fordapeople}")
 
