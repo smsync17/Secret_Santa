@@ -1,18 +1,32 @@
 #from random import randint
 import random
 
-fordapeople = None
 
 # Using Sattolo's algorithm (variation of Fisher-Yates) for a complete random shuffle 
 def sattolo(a):
     size = len(a)
-    fordapeople = array
     for i in range(size-1):
         j = random.randrange(i+1, size)
-        a[i], a[j] = fordapeople[j], fordapeople[i]
-    print(fordapeople)
+        a[i], a[j] = a[j], a[i]
+    # print(a)
+    return a
+
+def santa(a, b):
+    for x in range(len(a)):
+        print(f"{b[x]} is buying for {a[x]}")
 
 
-array = [1,2,3,4,5,6,7,8,9,10]
-sattolo(array)
+array = ["Aris", "Ikenna", "Julliene", "Samrawi", "Philip", "Rey"]
+fordapeople = ["Aris", "Ikenna", "Julliene", "Samrawi", "Philip", "Rey"]
+# print(array)
+sattolo(fordapeople)
+# print(f"que {array}")
+# print(f"si {fordapeople}")
 
+santa(array, fordapeople)
+
+# fordapeople.append("Radek")
+
+
+# print(fordapeople)
+# print(array)
